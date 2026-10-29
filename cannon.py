@@ -23,8 +23,9 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
-        speed.x = (x + 200) / 25
-        speed.y = (y + 200) / 25
+        #cambio de 20 a 15 pa mayor placer
+        speed.x = (x + 200) / 15
+        speed.y = (y + 200) / 15
 
 
 def inside(xy):
@@ -54,8 +55,10 @@ def move():
         target = vector(200, y)
         targets.append(target)
 
+    #cambio de 0.5 a 1.5 algo asi
+
     for target in targets:
-        target.x -= 0.5
+        target.x -= 1.5
         if target.x<-200:
             target.x=200
             target.y=randrange(-150,150)
@@ -73,7 +76,8 @@ def move():
 
     draw()
 
-    ontimer(move, 50)
+    #cambio de 50 a 30, es un detallito menor
+    ontimer(move, 30)
 
 
 setup(420, 420, 370, 0)
