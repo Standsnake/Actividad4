@@ -76,7 +76,8 @@ def move():
 
     draw()
 
-    ontimer(move, 50)
+    #cambio de 50 a 30, es un detallito menor
+    ontimer(move, 30)
 
 
 setup(420, 420, 370, 0)
