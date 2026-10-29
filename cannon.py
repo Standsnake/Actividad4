@@ -54,8 +54,10 @@ def move():
         target = vector(200, y)
         targets.append(target)
 
+    #cambio de 0.5 a 1.5 algo asi
+
     for target in targets:
-        target.x -= 0.5
+        target.x -= 1.5
         if target.x<-200:
             target.x=200
             target.y=randrange(-150,150)
